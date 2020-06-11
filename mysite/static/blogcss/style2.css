@@ -1,0 +1,89 @@
+.thumbnail{
+    position: relative;
+    width: 100%;
+}
+
+.container-fluid{
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.post-form{
+  margin-top: 80px;
+  }
+
+.contactcard{
+  margin-top: 80px;
+  width: 40rem;
+  margin: auto;
+  margin-top:80px;
+}
+
+.top{
+    margin-top: 50px;
+}
+
+h2.text-center{
+  margin-top: 40px
+}
+
+.caption{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 50%;
+    color: white;
+}
+
+.home{
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.blog{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+body{
+    font-family: "Georgia", Georgia, serif;
+}
+
+input, textarea{
+    border: 2px black;
+    width: 95%;
+    padding: 8px 5px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    /*border-radius: 5px;*/
+}
+
+p{
+  text-align: justify;
+}
+
+#about{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#home img{
+    width:100%;
+}
+
+input, textarea{
+    background-color: #e6f3ff;
+    width: 95%;
+    padding: 8px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/*Bootstrap*/
+.card{
+    width: 100%;
+    margin: auto;
+}

@@ -1,0 +1,29 @@
+{% extends "about/header.html" %}
+
+{% block content %}
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'blogcss/style2.css' %}">
+</head>
+
+
+<body>
+    <div class="col-md-8 col-md-10 mx-auto">
+        <h2 class="text-center">Hi, I'm Holly...</h2>
+        <img src="{% static 'images/aboutme.jpg' %}" alt="" class="img-responsive" id="about">
+        <br>
+        <p class="text-dark">I am a recent engineering grad with plans to soul search on a gap year before entering 50 odd years of work. One month into my adventures I found myself quarantined in a hostel in South America, unsure when travel restrictions might be lifted. I returned to my family home and with the suggestion to write a blog, a wave of enthusiasm washed over me... and that brings us to the present day. I learned to develop a website and now I'm writing an about me page.
+            <br>
+        I will be reflecting on life events, aiming to gain some clarity in the chaos of the world. I intend to be open and honest when sharing my perspectives. My hope is that this hobby might spark some discussion and that we will learn something new. Here's to discovery!
+        </p>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+{% endblock %}
