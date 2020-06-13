@@ -28,7 +28,14 @@
     <h3>Comments</h3>
     <p>What did you think? Let me know in the comments below!</p>
     <div id="add_comment">
-      <a class="btn btn-info" href="{% url 'add_comment_to_post' pk=post.pk %}">Leave a comment</a>
+      <div class="container">
+        <form method="POST" class="post-form">
+          <h2>New comment</h2>
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="save btn btn-primary">Send</button>
+        </form>
+      </div>
       <br>
       <br>
       {% for comment in post.comments.all %}
