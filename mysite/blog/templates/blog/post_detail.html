@@ -25,18 +25,23 @@
   <hr>
 
   <div class="container">
-    <h3>Comments</h3>
-    <p>What did you think? Let me know in the comments below!</p>
     <div id="add_comment">
       <div class="container">
         <form method="POST" class="post-form">
-          <h2>New comment</h2>
+          <h3>New comment</h3>
           {% csrf_token %}
-          {{ form.as_p }}
+          <h6>Name: </h6>
+          {{ form.name }}
+          <h6>Email (your email will never be shared with anyone else): </h6>
+          {{ form.email }}
+          <h6>Comment: </h6>
+          {{ form.body }}
+
           <button type="submit" class="save btn btn-primary">Send</button>
         </form>
       </div>
       <br>
+          <h3>Comments</h3>
       <br>
       {% for comment in post.comments.all %}
         <div class="comment">

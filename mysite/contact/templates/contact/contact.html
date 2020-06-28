@@ -11,21 +11,27 @@
   <link rel="stylesheet" href="{% static 'blogcss/style2.css' %}">
 </head>
 
-<body>
-  <div class="contactcard">
-    <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Get in touch!</h2>
-          <h6 class="card-subtitle mb-2 text-muted">Suggestions, questions, and comments are warmly welcome.</h6>
-          <form role="form" action="" method="post">
-              {% csrf_token %}
-              {{ form.as_p }}
-              <div class="form-group">
-                <button class="btn btn-primary" type="submit">Submit</button>
-              </div>
-          </form>
+<body id="home">
+        <div class="container-fluid">
+            <div class="top">
+                <div class="thumbnail">
+                    <img src="{% static 'images/rainbow.jpg' %}" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h1>Get in touch!</h1>
+                        <h3>Questions and suggestions are warmly welcome.</h3>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+  <div class="container">
+    <div class="blog">
+      <div style="text-align: center">
+        <br>
+        Contact email:   hollygs96@live.co.uk
+      <br>    <br>
+    GitHub:   github.com/HollyGS
       </div>
     </div>
   </div>

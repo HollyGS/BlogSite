@@ -167,10 +167,3 @@ STATICFILES_DIRS = [
 
 ]
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-EMAIL_HOST = 'smtp.live.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'hollygs96@live.co.uk'
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
