@@ -1,7 +1,6 @@
 from django.views import generic
 from .models import Post, Comment
 from .forms import CommentForm
-from django.views.generic.edit import FormView
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from . import urls
